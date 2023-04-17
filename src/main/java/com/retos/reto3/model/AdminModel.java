@@ -18,7 +18,7 @@ public class AdminModel {
     @Column(name = "id_admin")
     private int idAdmin;
     @Column(length = 45)
-    private String emal;
+    private String email;
     @Column(length = 45)
     private String password;
     private byte age;
