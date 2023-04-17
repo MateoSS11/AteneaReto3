@@ -23,7 +23,7 @@ public class ClientModel {
     private String email;
     @Column(length = 45)
     private String password;
-    
+
     @Column(length = 250)
     private String name;
 
