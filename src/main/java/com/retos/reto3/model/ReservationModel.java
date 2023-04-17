@@ -31,7 +31,7 @@ public class ReservationModel {
     private CarModel car;
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name="id_client", nullable = false)
-    @JsonIgnoreProperties({"reservations","message"})
+    @JsonIgnoreProperties({"reservations","messages"})
     private ClientModel client;
 
     @OneToOne(cascade = CascadeType.ALL)

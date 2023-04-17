@@ -37,6 +37,6 @@ public class CarModel {
     @JsonIgnoreProperties({"car","client"})
     private List<MessageModel> messages;
 
-    @OneToMany(cascade = CascadeType.MERGE, mappedBy = "client")
+    @OneToMany(cascade = CascadeType.MERGE, mappedBy = "car")
     private List<ReservationModel> reservations;
 }
